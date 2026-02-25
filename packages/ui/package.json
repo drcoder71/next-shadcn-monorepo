@@ -39,6 +39,7 @@
       "./src/hooks/*.ts",
       "./src/hooks/*.tsx"
     ],
-    "./components/*": "./src/components/*.tsx"
+    "./components/base/*": "./src/components/ui/*.tsx",
+    "./components/shared/*.tsx": "./src/components/shared/*.tsx"
   }
 }

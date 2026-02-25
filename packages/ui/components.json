@@ -14,6 +14,7 @@
     "components": "@repo/ui/components",
     "utils": "@repo/ui/lib/utils",
     "ui": "@repo/ui/components/ui",
+    "shared": "@repo/ui/components/shared",
     "lib": "@repo/ui/lib",
     "hooks": "@repo/ui/hooks"
   },
