@@ -12,6 +12,10 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/hooks": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/constants": "workspace:*",
     "next": "catalog:",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"

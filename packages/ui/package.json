@@ -24,6 +24,10 @@
     "typescript": "catalog:"
   },
   "dependencies": {
+    "@repo/types": "workspace:*",
+    "@repo/hooks": "workspace:*",
+    "@repo/utils": "workspace:*",
+    "@repo/constants": "workspace:*",
     "@radix-ui/react-slot": "^1.2.4",
     "lucide-react": "catalog:",
     "tailwind-merge": "^3.3.1",

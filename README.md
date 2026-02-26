@@ -1,125 +1,133 @@
-# Turborepo starter with shadcn/ui
+# 🚀 Turborepo Starter with shadcn/ui
 
-This is Turborepo starter with shadcn/ui pre-configured.
+Modern Turborepo monorepo with shadcn/ui pre-configured.Clean architecture. Scalable structure. Full TypeScript support.
 
-> [!NOTE]
-> This example uses `pnpm` as package manager.
+> ⚠️ This project uses **pnpm** as package manager.
 
-[bun version](https://github.com/dan5py/turborepo-shadcn-ui/tree/bun)
+---
 
-## Using this example
+## 📦 Tech Stack
 
-Clone the repository:
+- Next.js
+- React 19
+- TypeScript
+- TailwindCSS v4
+- Turborepo
+- shadcn/ui
+- ESLint
+- Prettier
 
-```sh
-git clone https://github.com/dan5py/turborepo-shadcn-ui.git
-```
+---
 
-Install dependencies:
+# 📁 Project Structure
 
-```sh
+apps/
+  docs/                → Next.js application
+
+packages/
+  ui/                  → Shared UI components (shadcn + custom)
+  share/               → Shared business logic
+  hooks/               → Reusable React hooks
+  utils/               → Utility functions (date, query, helpers)
+  types/               → Shared TypeScript types
+  constants/           → Global constants
+  eslint-config/       → Shared ESLint config
+  typescript-config/   → Shared tsconfig
+
+All packages are 100% TypeScript.
+
+---
+
+# ⚙️ Getting Started
+
+## 1️⃣ Clone repository
+
+git clone https://github.com/drcoder71/.git
+
+## 2️⃣ Install dependencies
+
 cd turborepo-shadcn-ui
 pnpm install
-```
 
-### Add ui components
+---
 
-Use the pre-made script:
+# 🧩 Add UI Components
 
-```sh
-pnpm ui add <component-name>
-```
+Use built-in script:
 
-> This works just like the `shadcn/ui` CLI.
+pnpm ui add `<component-name>`
 
-### Add a new app
+Works same as shadcn/ui CLI.
 
-Turborepo offer a simple command to add a new app:
+---
 
-```sh
-pnpm turbo gen workspace --name <app-name>
-```
+# 🆕 Add New App
 
-This will create a new empty app in the `apps` directory.
+Create new app:
 
-If you want, you can copy an existing app with:
+pnpm turbo gen workspace --name `<app-name>`
 
-```sh
-pnpm turbo gen workspace --name <app-name> --copy
-```
+Copy existing app:
 
-> [!NOTE]
-> Remember to run `pnpm install` after copying an app.
+pnpm turbo gen workspace --name `<app-name>` --copy
 
-## What's inside?
+After copying:
 
-This Turborepo includes the following packages/apps:
+pnpm install
 
-### Apps and Packages
+---
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library (🚀 powered by **shadcn/ui**)
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+# 🛠 Development
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Run all apps:
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```sh
-cd turborepo-shadcn-ui
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```sh
-cd turborepo-shadcn-ui
 pnpm dev
-```
 
-### Remote Caching
+Build all apps:
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+pnpm build
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+---
 
-```
-cd turborepo-shadcn-ui
+# 🧠 Architecture Principles
+
+- Clean folder structure
+- Separation of concerns
+- Shared reusable logic
+- Type-safe modules
+- Scalable monorepo design
+
+---
+
+# ☁ Remote Caching (Optional)
+
+Turborepo supports Remote Cache for faster builds.
+
+By default → local cache only.
+
+Enable remote cache:
+
 npx turbo login
-```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+Link project:
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```sh
 npx turbo link
-```
 
-## Useful Links
+Now build cache is shared across team and CI/CD.
 
-Learn more about the power of Turborepo:
+---
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+# 📚 Useful Links
 
-Learn more about shadcn/ui:
+Turborepo Docs
+https://turbo.build/repo/docs
 
-- [Documentation](https://ui.shadcn.com/docs)
+shadcn/ui Docs
+https://ui.shadcn.com/docs
+
+---
+
+# 🎯 Goal
+
+Production-ready monorepo starter.
+Fast. Clean. Maintainable.

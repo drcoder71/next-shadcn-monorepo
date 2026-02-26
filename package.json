@@ -1,8 +1,7 @@
 {
-  "name": "turborepo-shadcn-ui",
-  "version": "1.6.1",
+  "name": "next-shadcn-monorepo",
+  "version": "0.1.1",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
