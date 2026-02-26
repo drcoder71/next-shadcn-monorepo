@@ -42,11 +42,11 @@ All packages are 100% TypeScript.
 
 ## 1️⃣ Clone repository
 
-git clone https://github.com/drcoder71/.git
+git clone https://github.com/drcoder71/next-shadcn-monorepo.git
 
 ## 2️⃣ Install dependencies
 
-cd turborepo-shadcn-ui
+cd next-shadcn-monorepo
 pnpm install
 
 ---
