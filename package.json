@@ -1,24 +1,43 @@
 {
   "name": "next-shadcn-monorepo",
-  "version": "0.1.1",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ui": "pnpm --filter @repo/ui ui",
-    "check-types": "turbo run check-types"
+  "version": "1.0.0",
+  "private": false,
+  "description": "Next.js + shadcn/ui Turborepo monorepo starter template",
+  "keywords": ["nextjs", "shadcn", "monorepo", "turborepo", "react", "typescript"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drcoder71/next-shadcn-monorepo.git"
   },
-  "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "prettier": "catalog:",
-    "turbo": "2.6.0"
-  },
+  "author": "drCoder",
   "packageManager": "pnpm@10.15.0",
   "engines": {
     "node": ">=24"
   },
-  "license": "MIT"
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "postinstall": "echo 'Welcome! Run pnpm dev to start your monorepo apps.'",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json,css}\"",
+    "ui": "pnpm --filter @repo/ui ui",
+    "check-types": "turbo run check-types"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "turbo": "^2.6.0",
+    "prettier": "^3.1.0",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
+  },
+  "files": [
+    "apps",
+    "packages",
+    "README.md",
+    "package.json"
+  ]
 }
